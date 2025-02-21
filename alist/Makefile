@@ -12,7 +12,7 @@ PKG_WEB_VERSION:=3.42.0
 PKG_RELEASE:=1
 
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
-PKG_SOURCE_URL:=https://codeload.github.com/AlistGo/alist/tar.gz/v$(PKG_VERSION)?
+PKG_SOURCE_URL:=https://codeload.github.com/akitano2025/alist/tar.gz/v$(PKG_VERSION)?
 PKG_HASH:=16a2b72b65e26c48078c800500cbb5c7614b6f0987704df5bd87d6390c166d61
 
 PKG_LICENSE:=GPL-3.0
@@ -31,7 +31,7 @@ PKG_BUILD_PARALLEL:=1
 PKG_USE_MIPS16:=0
 PKG_BUILD_FLAGS:=no-mips16
 
-GO_PKG:=github.com/alist-org/alist
+GO_PKG:=github.com/akitano2025/alist
 GO_PKG_LDFLAGS:= \
 	-X '$(GO_PKG)/v3/internal/conf.BuiltAt=$(shell date '+%Y-%m-%d %H:%M:%S %z')' \
 	-X '$(GO_PKG)/v3/internal/conf.GoVersion=$(shell $(STAGING_DIR_HOSTPKG)/bin/go version | sed 's/go version //')' \
